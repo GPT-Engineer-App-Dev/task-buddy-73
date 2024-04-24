@@ -6,13 +6,11 @@ import TodoPage from './pages/TodoPage';
 function App() {
   return (
     <Router>
+      <Navigation />
       <Routes>
-        <Navigation />
-        <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/todos" element={<TodoPage />} />
         </Routes>
-      </Routes>
     </Router>
   );
 }
